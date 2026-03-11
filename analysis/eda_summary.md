@@ -2,9 +2,11 @@
 
 ## Overview
 
-Exploratory Data Analysis (EDA) was conducted to understand the structure of the Superstore sales dataset and identify patterns in sales performance across products, regions, and customer segments.
+Exploratory Data Analysis (EDA) was conducted to understand the structure of the Superstore Sales dataset and identify patterns in sales performance across products, regions, and customer segments.
 
-The objective of this phase was to explore historical sales data and determine the main drivers of revenue.
+The objective of this phase was to explore historical sales data, identify key revenue drivers, and uncover patterns that could inform business insights and dashboard development.
+
+The analysis was performed using **SQL queries and Power BI visualizations** to examine sales across different business dimensions.
 
 ---
 
@@ -19,7 +21,7 @@ The dataset contains transactional retail sales data including:
 - Sales values
 - Order dates
 
-Each record represents a single product order transaction.
+Each record represents a single product order transaction associated with a specific customer, product, and geographic region.
 
 ---
 
@@ -27,48 +29,50 @@ Each record represents a single product order transaction.
 
 ### Sales by Category
 
-Sales were analyzed by product category to determine which category contributes the most revenue.
+Sales were aggregated by product category to determine which categories generate the highest revenue.
 
-This analysis helps identify the most profitable product segments and informs product strategy.
+This analysis helps identify the most profitable product groups and supports strategic decisions related to product offerings and inventory management.
 
 ---
 
 ### Sales by Sub-Category
 
-Sub-category analysis was performed to understand which specific product groups drive sales within each category.
+Sub-category analysis was performed to identify which specific product groups contribute the most sales within each category.
 
-This provides a more granular view of product performance.
+This provides a more detailed understanding of product performance and highlights high-performing product segments.
 
 ---
 
 ### Regional Sales Distribution
 
-Sales were aggregated by region to determine which geographic markets generate the most revenue.
+Sales were analyzed by geographic region to determine which markets generate the most revenue.
 
-Understanding regional performance can support location-based business strategies.
+Understanding regional sales performance helps businesses identify strong markets and potential opportunities for growth.
 
 ---
 
 ### Customer Segment Contribution
 
-Sales were analyzed by customer segment to determine which customer groups contribute the most to overall revenue.
+Sales were analyzed by customer segment to evaluate which groups contribute the largest share of revenue.
 
-This analysis helps identify the most valuable customer segments.
+This analysis helps businesses understand their most valuable customer segments and develop targeted marketing strategies.
 
 ---
 
 ### Sales Trends Over Time
 
-Sales were analyzed over time using order dates to identify patterns such as:
+Sales data was analyzed over time using order dates to identify patterns such as:
 
-- Monthly trends
+- Monthly sales trends
 - Seasonal variations
-- Overall growth patterns
+- Long-term growth patterns
 
-Understanding these trends is essential for forecasting future sales.
+Understanding these trends is important for forecasting future sales and planning business operations.
 
 ---
 
 ## Summary
 
-The exploratory analysis revealed key patterns in product performance, regional sales distribution, and customer segment contributions. These insights provided the foundation for dashboard visualization and sales forecasting in later stages of the project.
+The exploratory analysis revealed important patterns in product performance, regional sales distribution, and customer segment contributions.
+
+These findings helped guide the development of the Power BI dashboards and supported the generation of business insights and short-term sales forecasting in later stages of the project.
