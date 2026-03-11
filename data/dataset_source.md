@@ -1,7 +1,17 @@
 # Dataset Source
 
 ## Overview
-This project uses the **Superstore Sales Dataset**, a retail dataset containing four years of transactional sales data from a global superstore. The dataset is commonly used for exploratory data analysis (EDA), business intelligence dashboards, and time-series forecasting.
+
+This project uses the **Superstore Sales Dataset**, a retail dataset containing four years of transactional sales data from a global superstore.
+
+The dataset is commonly used in data analytics and business intelligence projects to demonstrate **sales performance analysis, customer segmentation, and time-series forecasting techniques**.
+
+## Dataset Coverage
+
+The dataset contains approximately four years of sales transactions.
+
+Time Period: 2015 – 2018
+Number of Records: ~9800 transactions
 
 ## Dataset Description
 The dataset contains sales transaction records with information about orders, products, customers, and regions. It allows analysts to evaluate sales performance and identify trends across different business dimensions.
