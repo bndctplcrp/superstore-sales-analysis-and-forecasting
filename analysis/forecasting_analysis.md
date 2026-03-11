@@ -4,45 +4,53 @@
 
 A short-term sales forecast was generated using historical sales data to estimate future sales performance.
 
-The goal of this analysis is to predict expected sales for the **next 7 days** based on historical patterns observed in the dataset.
+The objective of this analysis is to predict expected sales for the **next 7 days** based on patterns observed in historical sales transactions.
+
+Forecasting provides valuable insight that helps businesses anticipate demand and make data-driven operational decisions.
 
 ---
 
 ## Forecasting Approach
 
-Sales data was aggregated by order date to create a time series representing daily sales performance.
+To perform the forecast, sales data was first aggregated by **order date** to create a time series representing daily sales performance.
 
-Historical trends in the data were then used to generate a short-term forecast.
+The time-series data was then visualized using **Power BI**, where the built-in forecasting feature was applied to estimate future sales values.
 
-Forecasting helps businesses anticipate future demand and make informed operational decisions.
+Power BI forecasting uses statistical time-series methods to analyze historical trends and project future values over a defined forecast horizon.
+
+The forecast was generated for the **7 days following the last available date in the dataset**.
 
 ---
 
 ## Forecast Results
 
-The forecast projects expected sales values for the next seven days following the last recorded date in the dataset.
+The forecast produced projected sales values for the next seven days.
 
-The forecast indicates that:
+The results suggest that:
 
-- Sales are expected to continue following the historical trend pattern
-- Short-term fluctuations may occur due to daily variability
-- Overall demand remains relatively stable in the near future
+- Sales are expected to continue following the overall historical trend.
+- Short-term fluctuations may occur due to normal daily variability.
+- Overall demand appears relatively stable in the short term.
+
+These projections provide an estimate of expected future sales behavior based on past performance.
 
 ---
 
 ## Business Value of Forecasting
 
-Short-term sales forecasting helps organizations:
+Short-term sales forecasting provides several benefits for business decision-making:
 
-- Plan inventory levels
-- Allocate operational resources
-- Improve supply chain planning
-- Anticipate demand fluctuations
+- Helps organizations plan inventory levels
+- Supports better allocation of operational resources
+- Improves supply chain planning
+- Enables businesses to anticipate demand fluctuations
 
-By understanding future demand patterns, businesses can make more informed strategic decisions.
+By understanding potential future sales patterns, companies can make more informed strategic and operational decisions.
 
 ---
 
 ## Summary
 
-The forecasting analysis provides a short-term projection of sales performance based on historical trends. This predictive insight supports better operational planning and decision-making.
+The forecasting analysis used historical sales data to generate a short-term projection of future sales performance.
+
+Using Power BI’s forecasting capabilities, the analysis estimated expected sales for the next **7 days**, providing predictive insight that supports operational planning and data-driven decision-making.
