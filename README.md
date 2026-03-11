@@ -2,164 +2,219 @@
 
 ## Project Overview
 
-This project analyzes historical sales data from a global retail superstore to understand sales performance across products, regions, and customer segments. The analysis also includes a short-term **7-day sales forecast** based on historical sales trends.
+This project analyzes historical sales data from a global retail superstore to understand sales performance across products, regions, and customer segments.
 
-The objective of this project is to demonstrate a complete data analytics workflow including data preparation, exploratory analysis, dashboard development, and forecasting using industry tools.
+The analysis also includes a short-term **7-day sales forecast** based on historical sales trends.
+
+The goal of this project is to demonstrate an **end-to-end data analytics workflow**, including data preparation, SQL-based analysis, exploratory data analysis (EDA), dashboard development, and sales forecasting.
+
+The project uses **Excel, PostgreSQL (SQL), and Power BI** to transform raw data into actionable business insights.
 
 ---
 
-## Business Problem
+# Business Problem
 
-Retail businesses need to understand historical sales performance in order to improve strategic planning, optimize product offerings, and anticipate future demand.
+Retail businesses need to understand historical sales performance to improve decision-making, optimize product strategies, and anticipate future demand.
 
 This project aims to answer the following business questions:
 
-1. What product categories generate the most sales?
-2. Which regions contribute the highest revenue?
-3. Which products drive the highest sales?
-4. What are the sales trends over time?
-5. Can we predict the next **7 days of sales** using historical data?
+1. Which **product categories generate the most sales**?
+2. Which **regions contribute the highest revenue**?
+3. Which **products drive the highest sales**?
+4. What are the **sales trends over time**?
+5. Can we **predict the next 7 days of sales** using historical data?
 
 ---
 
-## Dataset
+# Dataset
 
-The dataset used in this project is the **Superstore Sales Dataset**, which contains four years of retail transaction data including product, customer, and geographic information.
+The dataset used in this project is the **Superstore Sales Dataset**, which contains four years of retail transaction data including product information, customer segments, geographic regions, and sales values.
 
-Due to repository size and dataset distribution policies, the dataset is not stored in this repository.
+Due to repository size and dataset distribution policies, the dataset is **not stored in this repository**.
 
-You can find the dataset source here:
+Dataset details and download instructions can be found here:
 
 `data/dataset_source.md`
 
 ---
 
-## Tools Used
+# Tools Used
 
-- **Excel** – Initial dataset inspection and validation  
-- **SQL** – Data querying and analysis  
-- **Power BI** – Dashboard development and visualization  
+The project uses the following tools:
 
----
-
-## Project Workflow
-
-The project follows a structured analytics workflow:
-
-1. **Data Preparation**
-   - Data validation and structure review
-   - Data type verification
-   - Missing value checks
-
-2. **Exploratory Data Analysis**
-   - Sales by category
-   - Sales by region
-   - Customer segment analysis
-   - Product performance analysis
-
-3. **Dashboard Development**
-   - Sales performance overview
-   - Sales trend analysis
-   - Interactive filtering and visualization
-
-4. **Sales Forecasting**
-   - Time-series analysis of historical sales
-   - 7-day sales forecast
+- **Excel** – Preliminary data inspection and validation  
+- **PostgreSQL / SQL (via DBeaver)** – Data storage and analytical queries  
+- **Power BI** – Dashboard development and forecasting  
 
 ---
 
-## Dashboard Overview
+# Project Workflow
 
-The Power BI dashboard contains two main sections:
+The analysis follows a structured analytics workflow.
 
-### Sales Performance Overview
+## 1 Data Preparation
 
-Key metrics include:
+The dataset was reviewed and validated to ensure accuracy and consistency.
 
-- Total Sales
-- Total Orders
-- Sales by Category
-- Sales by Region
-- Top Products by Sales
+Key steps included:
 
-This section provides a high-level view of the company’s sales performance.
+- Data inspection in Excel
+- Data type verification
+- Duplicate checks
+- Missing value validation
+- Importing data into PostgreSQL
 
----
-
-### Sales Trends and Forecasting
-
-This section focuses on temporal analysis and predictive insights.
-
-Key visualizations include:
-
-- Sales trend over time
-- Monthly sales analysis
-- 7-day sales forecast
-
-These visualizations help identify patterns and anticipate future demand.
+Documentation:  
+`documentation/data_preparation.md`
 
 ---
 
-## Key Insights
+## 2 Exploratory Data Analysis (EDA)
 
-Some key findings from the analysis include:
+Exploratory analysis was conducted to understand sales patterns and identify key performance drivers.
 
-- Technology products generate the highest revenue among all categories.
-- The West region contributes the largest share of total sales.
-- The Consumer segment drives the majority of sales.
-- A small number of products contribute significantly to total revenue.
-- Sales show a consistent upward trend over time.
+Areas explored include:
 
-More detailed insights can be found in:
+- Sales by product category
+- Sales by sub-category
+- Regional sales distribution
+- Customer segment contribution
+- Sales trends over time
+
+Documentation:  
+`analysis/eda_summary.md`
+
+---
+
+## 3 SQL Analysis
+
+SQL queries were used to analyze business performance including:
+
+- Overall sales KPIs
+- Product performance
+- Regional sales comparisons
+- Customer segment analysis
+- Time-series sales trends
+- Shipping performance analysis
+
+SQL scripts are included in:
+
+`sql/`
+
+---
+
+## 4 Dashboard Development
+
+A Power BI dashboard was created to visualize key metrics and insights.
+
+The dashboard includes:
+
+- Sales performance overview
+- Product category analysis
+- Regional sales performance
+- Sales trends over time
+- Interactive filtering
+
+Documentation:  
+`documentation/dashboard_design.md`
+
+---
+
+## 5 Sales Forecasting
+
+A **7-day sales forecast** was generated using historical sales data.
+
+This forecasting helps estimate short-term future demand and supports operational planning.
+
+Documentation:  
+`analysis/forecasting_analysis.md`
+
+---
+
+# Dashboard Preview
+
+## Sales Performance Overview
+
+![Sales Dashboard](dashboards/sales_performance_overview.png)
+
+---
+
+## Sales Trends and Forecasting
+
+![Forecast Dashboard](dashboards/sales_trends_forecasting.png)
+
+---
+
+# Key Insights
+
+The analysis revealed several important business insights:
+
+- **Technology products generate the highest revenue**
+- **The West region contributes the largest share of total sales**
+- **The Consumer segment drives the majority of revenue**
+- **A small number of products generate a large portion of total sales**
+- **Sales show a steady upward trend over time**
+
+Detailed insights and recommendations can be found here:
 
 `analysis/insights.md`
 
 ---
 
-## Repository Structure
-
-```
-superstore-sales-analysis-and-forecasting
-│
-├── data
-│   └── dataset_source.md
-│
-├── excel
-│   └── data_validation_and_cleaning.xlsx
-│
-├── sql
-│   └── sales_analysis_queries.sql
-│
-├── powerbi
-│   └── superstore_sales_dashboard.pbix
-│
-├── dashboards
-│   ├── sales_performance_overview.png
-│   └── sales_trends_forecasting.png
+# Repository Structure
+superstore-sales-analysis
 │
 ├── analysis
-│   ├── eda_summary.md
-│   ├── insights.md
-│   └── forecasting_analysis.md
+│ ├── eda_summary.md
+│ ├── forecasting_analysis.md
+│ └── insights.md
+│
+├── dashboards
+│ ├── sales_performance_overview.png
+│ └── sales_trends_forecasting.png
+│
+├── data
+│ └── dataset_source.md
 │
 ├── documentation
-│   ├── data_preparation.md
-│   ├── analysis_process.md
-│   └── dashboard_design.md
+│ ├── analysis_process.md
+│ ├── dashboard_design.md
+│ └── data_preparation.md
 │
+├── excel
+│
+├── powerbi
+│ └── superstore_sales_dashboard.pbix
+│
+├── sql
+│ ├── 01_create_database.sql
+│ ├── 02_create_tables.sql
+│ ├── 03_data_validation.sql
+│ ├── 04_business_kpis.sql
+│ ├── 05_product_performance.sql
+│ ├── 06_geographic_analysis.sql
+│ ├── 07_customer_segment_analysis.sql
+│ ├── 08_time_series_analysis.sql
+│ ├── 09_shipping_analysis.sql
+│ └── 10_powerbi_views.sql
+│
+├── .gitattributes
+├── LICENSE
 └── README.md
-```
+
 
 ---
 
-## Project Outcome
+# Project Outcome
 
-This project demonstrates how historical sales data can be transformed into actionable insights through structured analysis and visualization. The dashboard and forecasting model help businesses understand performance trends and make informed planning decisions.
+This project demonstrates how historical sales data can be transformed into meaningful business insights through structured analysis and visualization.
+
+By combining **SQL analysis, interactive dashboards, and forecasting**, the project shows how data analytics can support better business decision-making.
 
 ---
 
-## Author
+# Author
 
 **Ben Policarpio**
 
-Aspiring Data Analyst focused on building end-to-end analytics projects using Excel, SQL, and Power BI.
+Junior Data Analyst focused on building end-to-end analytics projects using **Excel, SQL, and Power BI**.
