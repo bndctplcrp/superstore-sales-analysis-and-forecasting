@@ -244,7 +244,7 @@ By combining **SQL analysis, interactive dashboards, and forecasting techniques*
 
 # Author
 
-**Ben Policarpio**
+**Benedict Policarpio**
 
 Junior **Data Analyst** focused on building end-to-end analytics projects using:
 
