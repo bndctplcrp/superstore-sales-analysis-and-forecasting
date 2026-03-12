@@ -6,7 +6,13 @@ This project analyzes historical sales data from a global retail superstore to u
 
 The analysis also includes a short-term **7-day sales forecast** based on historical sales trends.
 
-The goal of this project is to demonstrate an **end-to-end data analytics workflow**, including data preparation, SQL-based analysis, exploratory data analysis (EDA), dashboard development, and sales forecasting.
+The objective of this project is to demonstrate a complete **end-to-end data analytics workflow**, including:
+
+- Data preparation
+- SQL-based data analysis
+- Exploratory data analysis (EDA)
+- Interactive dashboard development
+- Short-term sales forecasting
 
 The project uses **Excel, PostgreSQL (SQL), and Power BI** to transform raw data into actionable business insights.
 
@@ -14,7 +20,12 @@ The project uses **Excel, PostgreSQL (SQL), and Power BI** to transform raw data
 
 # Business Problem
 
-Retail businesses need to understand historical sales performance to improve decision-making, optimize product strategies, and anticipate future demand.
+Retail organizations need to understand historical sales performance in order to:
+
+- Identify high-performing products
+- Evaluate regional market performance
+- Understand customer purchasing behavior
+- Anticipate future demand
 
 This project aims to answer the following business questions:
 
@@ -28,9 +39,15 @@ This project aims to answer the following business questions:
 
 # Dataset
 
-The dataset used in this project is the **Superstore Sales Dataset**, which contains four years of retail transaction data including product information, customer segments, geographic regions, and sales values.
+The dataset used in this project is the **Superstore Sales Dataset**, which contains four years of retail transaction data including:
 
-Due to repository size and dataset distribution policies, the dataset is **not stored in this repository**.
+- Product information
+- Customer segments
+- Geographic regions
+- Order and shipping dates
+- Sales values
+
+Due to repository size and dataset distribution policies, the dataset is **not stored directly in this repository**.
 
 Dataset details and download instructions can be found here:
 
@@ -38,40 +55,45 @@ Dataset details and download instructions can be found here:
 
 ---
 
-# Tools Used
+# Tools and Technologies
 
 The project uses the following tools:
 
-- **Excel** – Preliminary data inspection and validation  
-- **PostgreSQL / SQL (via DBeaver)** – Data storage and analytical queries  
-- **Power BI** – Dashboard development and forecasting  
+| Tool | Purpose |
+|-----|--------|
+| **Excel** | Initial data inspection and validation |
+| **PostgreSQL / SQL** | Data storage and analytical queries |
+| **DBeaver** | Database management and query execution |
+| **Power BI** | Dashboard development and sales forecasting |
 
 ---
 
 # Project Workflow
 
-The analysis follows a structured analytics workflow.
+The analysis follows a structured data analytics workflow.
 
-## 1 Data Preparation
+---
 
-The dataset was reviewed and validated to ensure accuracy and consistency.
+## 1. Data Preparation
+
+The dataset was inspected and validated to ensure accuracy and consistency.
 
 Key steps included:
 
 - Data inspection in Excel
-- Data type verification
-- Duplicate checks
-- Missing value validation
-- Importing data into PostgreSQL
+- Column data type validation
+- Duplicate record checks
+- Missing value verification
+- Importing the dataset into PostgreSQL
 
 Documentation:  
 `documentation/data_preparation.md`
 
 ---
 
-## 2 Exploratory Data Analysis (EDA)
+## 2. Exploratory Data Analysis (EDA)
 
-Exploratory analysis was conducted to understand sales patterns and identify key performance drivers.
+Exploratory analysis was conducted to understand patterns and identify key sales drivers.
 
 Areas explored include:
 
@@ -86,16 +108,16 @@ Documentation:
 
 ---
 
-## 3 SQL Analysis
+## 3. SQL Analysis
 
-SQL queries were used to analyze business performance including:
+SQL queries were used to analyze business performance and generate key metrics including:
 
 - Overall sales KPIs
-- Product performance
+- Product performance analysis
 - Regional sales comparisons
 - Customer segment analysis
 - Time-series sales trends
-- Shipping performance analysis
+- Shipping performance evaluation
 
 SQL scripts are included in:
 
@@ -103,15 +125,16 @@ SQL scripts are included in:
 
 ---
 
-## 4 Dashboard Development
+## 4. Dashboard Development
 
-A Power BI dashboard was created to visualize key metrics and insights.
+A Power BI dashboard was created to visualize key metrics and insights through interactive visualizations.
 
 The dashboard includes:
 
 - Sales performance overview
 - Product category analysis
-- Regional sales performance
+- Regional sales comparison
+- Top-performing products
 - Sales trends over time
 - Interactive filtering
 
@@ -120,11 +143,15 @@ Documentation:
 
 ---
 
-## 5 Sales Forecasting
+## 5. Sales Forecasting
 
-A **7-day sales forecast** was generated using historical sales data.
+A **7-day sales forecast** was generated using historical sales data to estimate short-term future demand.
 
-This forecasting helps estimate short-term future demand and supports operational planning.
+This forecasting helps businesses:
+
+- Anticipate upcoming sales levels
+- Improve inventory planning
+- Support operational decision-making
 
 Documentation:  
 `analysis/forecasting_analysis.md`
@@ -155,61 +182,63 @@ The analysis revealed several important business insights:
 - **A small number of products generate a large portion of total sales**
 - **Sales show a steady upward trend over time**
 
-Detailed insights and recommendations can be found here:
+Detailed insights and business recommendations can be found here:
 
 `analysis/insights.md`
 
 ---
 
 # Repository Structure
+
+```
 superstore-sales-analysis
 │
 ├── analysis
-│ ├── eda_summary.md
-│ ├── forecasting_analysis.md
-│ └── insights.md
+│   ├── eda_summary.md
+│   ├── forecasting_analysis.md
+│   └── insights.md
 │
 ├── dashboards
-│ ├── sales_performance_overview.png
-│ └── sales_trends_forecasting.png
+│   ├── sales_performance_overview.png
+│   └── sales_trends_forecasting.png
 │
 ├── data
-│ └── dataset_source.md
+│   └── dataset_source.md
 │
 ├── documentation
-│ ├── analysis_process.md
-│ ├── dashboard_design.md
-│ └── data_preparation.md
+│   ├── analysis_process.md
+│   ├── dashboard_design.md
+│   └── data_preparation.md
 │
 ├── excel
 │
 ├── powerbi
-│ └── superstore_sales_dashboard.pbix
+│   └── superstore_sales_dashboard.pbix
 │
 ├── sql
-│ ├── 01_create_database.sql
-│ ├── 02_create_tables.sql
-│ ├── 03_data_validation.sql
-│ ├── 04_business_kpis.sql
-│ ├── 05_product_performance.sql
-│ ├── 06_geographic_analysis.sql
-│ ├── 07_customer_segment_analysis.sql
-│ ├── 08_time_series_analysis.sql
-│ ├── 09_shipping_analysis.sql
-│ └── 10_powerbi_views.sql
+│   ├── 01_create_database.sql
+│   ├── 02_create_tables.sql
+│   ├── 03_data_validation.sql
+│   ├── 04_business_kpis.sql
+│   ├── 05_product_performance.sql
+│   ├── 06_geographic_analysis.sql
+│   ├── 07_customer_segment_analysis.sql
+│   ├── 08_time_series_analysis.sql
+│   ├── 09_shipping_analysis.sql
+│   └── 10_powerbi_views.sql
 │
 ├── .gitattributes
 ├── LICENSE
 └── README.md
-
+```
 
 ---
 
 # Project Outcome
 
-This project demonstrates how historical sales data can be transformed into meaningful business insights through structured analysis and visualization.
+This project demonstrates how raw transactional sales data can be transformed into meaningful business insights through structured analysis and visualization.
 
-By combining **SQL analysis, interactive dashboards, and forecasting**, the project shows how data analytics can support better business decision-making.
+By combining **SQL analysis, interactive dashboards, and forecasting techniques**, the project shows how data analytics can support informed business decision-making.
 
 ---
 
@@ -217,4 +246,8 @@ By combining **SQL analysis, interactive dashboards, and forecasting**, the proj
 
 **Ben Policarpio**
 
-Junior Data Analyst focused on building end-to-end analytics projects using **Excel, SQL, and Power BI**.
+Junior **Data Analyst** focused on building end-to-end analytics projects using:
+
+- Excel
+- SQL
+- Power BI
